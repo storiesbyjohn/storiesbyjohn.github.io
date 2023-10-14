@@ -16,23 +16,26 @@ p {
   color: red;
 }
 	</style>
-<style>
-.verticalhorizontal {
-    display: table-cell;
-    height: 300px;
-    text-align: center;
-    width: 300px;
-    vertical-align: middle;
+.img-container {
+  width: 150px;
+  height: 150px;
+  border: 2px solid red;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  
 }
-</style>	
+.img-container .img-to-fit {
+  flex: 1;
+  height: 100%;
+}
 </head>
  <center>
   <h1>Welcome to John's Story Page</h1>
-<div class="verticalhorizontal">
-  <center>
-    <img src="Rainbow.JPG" alt="centered image" />
-  </center>
-</div> 
+<div class="img-container">
+  <img class="img-to-fit" src="Rainbow.JPG" />
+</div>	 
    <div>	 
     <h2><a href="page2.html"> Next</a></h2>	        
     </div>
